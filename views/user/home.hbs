@@ -1,0 +1,134 @@
+<div class="row pt-5">
+    <div class="container pt-5">
+
+        {{#if admin}}
+        <a href="admin/addBets" class="btn btn-success float-right m-5">add new bets</a>
+
+        <div class="pt-5">
+            
+            
+            <h1 class="">{{date}}</h1>
+            {{#each data}}
+
+            <div class="card mt-5 ml-5 float-left " style="width: 18rem;">
+                <img class="card-img-top" src="{{image}}" alt="Card image cap" style="height: 13em;">
+                <div class="card-body">
+
+                    <h5 class="card-title mx-auto">League:</h5>
+                    <div class="row">
+                        
+                        <h6 class="mx-auto text-success">{{league}}</h6>
+
+                    </div>
+
+                    <h5 class="card-title mx-auto">Time:</h5>
+                    <div class="row">
+                        
+                        <h6 class="mx-auto text-success">{{time}}</h6>
+
+                    </div>
+                    
+                    <h5 class="card-title mx-auto">MATCH:</h5>
+                    <div class="row">  
+                        
+                        <h6 class="mx-auto text-success">{{home}}</h6>
+                        <h6 class="mx-auto text-success">vs</h6>
+                        <h6 class="mx-auto text-success">{{away}}</h6>
+
+                    </div>
+                    <br>
+                
+                    <h5 class="card-title mx-auto">prediction:</h5>
+                    <div class="row">
+                        
+                        
+                        <h6 class="mx-auto text-success">{{prediction}}</h6>
+                        
+                    </div>
+                
+                    <h5 class="card-title mx-auto">ODD:</h5>
+                    <div class="row">
+                        
+                        <h6 class="mx-auto text-success">{{odd}}</h6>
+                        
+                    </div>
+                    
+                    
+                    <a href="admin/editbets/{{_id}}"  class="btn btn-primary m-1">edit</a>
+                    <a href="admin/deletebets/{{_id}}" class="btn btn-danger m-1">delete</a>
+                    </div>
+            </div>
+            {{/each}}
+
+        </div>
+
+        {{else}}
+        
+        <div class="pt-5">
+            
+            <h1 class="">Bets for the Day</h1>
+            <h1 class="">{{date}}</h1>
+            {{#each data}}
+
+            <div class="card  mt-5 ml-5 float-left" style="width: 18rem;">
+                <img class="card-img-top" src="{{image}}" alt="Card image cap" style="height: 13em;">
+                <div class="card-body">
+
+                    <h5 class="card-title mx-auto">League:</h5>
+                    <div class="row">
+                        
+                        <h6 class="mx-auto text-success">{{league}}</h6>
+
+                    </div>
+
+                    <h5 class="card-title mx-auto">Time:</h5>
+                    <div class="row">
+                        
+                        <h6 class="mx-auto text-success">{{time}}</h6>
+
+                    </div>
+                    
+                    <h5 class="card-title mx-auto">MATCH:</h5>
+                    <div class="row">  
+                        
+                        <h6 class="mx-auto text-success">{{home}}</h6>
+                        <h6 class="mx-auto text-success">vs</h6>
+                        <h6 class="mx-auto text-success">{{away}}</h6>
+
+                    </div>
+                    <br>
+                
+                    <h5 class="card-title mx-auto">prediction:</h5>
+                    <div class="row">
+                        
+                        
+                        <h6 class="mx-auto text-success">{{prediction}}</h6>
+                        
+                    </div>
+                
+                    <h5 class="card-title mx-auto">ODD:</h5>
+                    <div class="row">
+                        
+                        <h6 class="mx-auto text-success">{{odd}}</h6>
+                        
+                    </div>
+                    
+                    <p class="card-text">place bet:</p>
+                    <a href="https://www.bet365.com/#/HO/" target="_blank" class="btn btn-success m-1">Bet365</a>
+                    <a href="https://betway.com/en-in/" target="_blank" class="btn btn-dark m-1">Betway</a>
+                    <a href="https://in.1xbet.com/" target="_blank" class="btn btn-light m-1">1Xbet</a>
+                    <a href="https://4rabet.com/" target="_blank" class="btn btn-primary m-1">4Rabet</a>
+                    <a href="https://melbet.com/en/" target="_blank" class="btn btn-warning m-1">Melbet</a>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+        
+        {{/if}}
+
+
+
+
+    </div>
+</div>

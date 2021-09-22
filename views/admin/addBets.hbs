@@ -1,0 +1,48 @@
+<div class="row pt-5">
+    <div class="container pt-5">
+
+        <form action="/admin/addBets" enctype="multipart/form-data" method="POST">
+        <div class="form-group mt-5">
+            <label>League</label>
+            <input name="league" type="text" class="form-control mb-2" placeholder="league name">
+            <label>Time</label>
+            <input name="time" type="text" class="form-control mb-4" placeholder="match time">
+            <label class="font-weight-bold">MATCH</label>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                <label for="">Home</label>
+            <input name="home" type="text" class="form-control mb-2" placeholder="home team">
+            
+            </div>
+            <div class="col-6">
+                <label for="">Away</label>
+            <input name="away" type="text" class="form-control mb-4" placeholder="away team">
+            
+
+            </div>
+            
+
+            </div>
+            <label>Prediction</label>
+            <input name="prediction" type="text" class="form-control mb-4" placeholder="match prediction">
+
+            <label>ODD</label>
+            <input name="odd" type="number" step="0.01" min="0" class="form-control mb-4" placeholder="ODD">
+            <img id="img" style="width: 100px;" alt="">
+            <label for="exampleFormControlFile1">img input</label>
+            <input name="image" type="text" class="form-control" placeholder="image url">
+            <button type="submit" class="btn btn-primary mt-5">Submit</button>
+
+        </div>
+
+    </form>
+        
+        
+        
+
+        
+
+    </div>
+</div>
+
